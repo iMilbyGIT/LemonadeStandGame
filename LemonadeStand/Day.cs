@@ -7,13 +7,17 @@ using System.Threading.Tasks;
 namespace LemonadeStand_3DayStarter
 {
     class Day
-    {
+    {   //member variables (HAS A)
         public Weather weather;
         public List<Customer> customers;
 
+        // constructor (SPAWNER)
+        public Day()
+        {
 
-        public Day();
+        }
 
+        //member methods (CAN DO)
 
     }
 }

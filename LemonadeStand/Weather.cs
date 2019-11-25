@@ -9,9 +9,9 @@ namespace LemonadeStand_3DayStarter
     class Weather
     {
         //member variables (HAS A)
-        string condition;
-        int temperature;
-        List<string> weatherConditions;
+        public string Condition;
+        public int Temperature;
+        public List<string> PossibleConditions;
 
         // constructor (SPAWNER)
         public Weather()
@@ -20,5 +20,16 @@ namespace LemonadeStand_3DayStarter
         }
 
         // member methods (CAN DO)
+        public void GenerateTemp()
+        {
+            Random rng = new Random();
+            Temperature = rng.Next(30, 95);   
+        }
+        public void GenerateCondition()
+        {
+            PossibleConditions = new List<string> { "Sunny", "Mostly Sunny", "Partly Cloudy/Sunny", "Mostly Cloudy", "Overcast" };
+            Random rng = new Random();
+            Condition = rng.Next();
+        }
     }
 }

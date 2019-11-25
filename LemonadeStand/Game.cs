@@ -16,9 +16,26 @@ namespace LemonadeStand_3DayStarter
         // constructor (SPAWNER)
         public Game()
         {
-
+            days = new List<Day>();
+            BuildDays();
         }
 
         // member methods (CAN DO)
-    }
+        public void BuildDays()
+        {
+            for (int i = 0; i < 7; i++)
+            {
+                Day day = new Day();
+                days.Add(day);
+            }
+        }
+        public void RunGame()
+        {
+            for (int i = 0; i < 7; i++)
+            {
+                days[i].RunDay();
+            }
+        }
+
+    }   
 }

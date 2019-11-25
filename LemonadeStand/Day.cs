@@ -14,10 +14,13 @@ namespace LemonadeStand_3DayStarter
         // constructor (SPAWNER)
         public Day()
         {
-
+            weather = new Weather();
         }
 
         //member methods (CAN DO)
+        public void RunDay()
+        {
 
+        }
     }
 }

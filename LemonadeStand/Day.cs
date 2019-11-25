@@ -20,7 +20,7 @@ namespace LemonadeStand_3DayStarter
         //member methods (CAN DO)
         public void RunDay()
         {
-            //all the logic needed for one day to happen
+         //all the logic needed for one day to happen
         }
     }
 }

@@ -8,8 +8,17 @@ namespace LemonadeStand_3DayStarter
 {
     class Game
     {
+        // member variable (HAS A)
         Player player;
         List<Day> days;
         int currentDay;
+
+        // constructor (SPAWNER)
+        public Game()
+        {
+
+        }
+
+        // member methods (CAN DO)
     }
 }

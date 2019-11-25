@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_3DayStarter
 {
-    class Weather
+    class Pitcher
     {
-        //member variables (HAS A)
-        string condition;
-        int temperature;
-        List<string> weatherConditions;
+        // member variables (HAS A)
+        int cupsLeftInPitcher;
 
-        // constructor (SPAWNER)
-        public Weather()
+        //constructor (Spawner)
+        public Pitcher()
         {
 
         }

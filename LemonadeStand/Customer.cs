@@ -8,7 +8,16 @@ namespace LemonadeStand_3DayStarter
 {
     class Customer
     {
+        // member variables (HAS A)
         List<string> names;
-        string name;
+        public string name;
+
+        // constructor (SPAWNER)
+        public Customer()
+        {
+
+        }
+
+        //member methods(CAN DO)
     }
 }

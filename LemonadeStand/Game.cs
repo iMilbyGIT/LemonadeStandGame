@@ -12,6 +12,7 @@ namespace LemonadeStand_3DayStarter
         Player player;
         List<Day> days;
         int currentDay;
+        
 
         // constructor (SPAWNER)
         public Game()

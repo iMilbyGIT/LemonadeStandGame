@@ -31,7 +31,10 @@ namespace LemonadeStand_3DayStarter
         }
         public void GenerateCustomerPreferences()
         {
-            
+            preferences = new List<string> { "PrefSunny", "PrefMostlySunny", "PrefPartlyCloudy/Sunny", "PrefMostlyCloudy", "PrefOvercast" };
+            Random rng = new Random();
+            int indexValue = rng.Next(0, preferences.Count);
+            preference = preferences[indexValue];
         }
 
     }

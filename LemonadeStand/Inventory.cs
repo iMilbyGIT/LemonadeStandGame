@@ -22,7 +22,6 @@ namespace LemonadeStand_3DayStarter
             iceCubes = new List<IceCube>();
             cups = new List<Cup>();
         }
-
         // member methods (CAN DO)
         public void AddLemonsToInventory(int numberOfLemons)
         {
@@ -32,7 +31,6 @@ namespace LemonadeStand_3DayStarter
                 lemons.Add(lemon);
             }
         }
-
         public void AddSugarCubesToInventory(int numberOfSugarCubes)
         {
             for(int i = 0; i < numberOfSugarCubes; i++)
@@ -41,7 +39,6 @@ namespace LemonadeStand_3DayStarter
                 sugarCubes.Add(sugarCube);
             }
         }
-
         public void AddIceCubesToInventory(int numberOfIceCubes)
         {
             for(int i = 0; i < numberOfIceCubes; i++)
@@ -50,7 +47,6 @@ namespace LemonadeStand_3DayStarter
                 iceCubes.Add(iceCube);
             }
         }
-
         public void AddCupsToInventory(int numberOfCups)
         {
             for(int i = 0; i < numberOfCups; i++)

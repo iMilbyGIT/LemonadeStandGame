@@ -13,6 +13,7 @@ namespace LemonadeStand_3DayStarter
         public string name;
         List<string> preferences;
         public string preference;
+        public string weatherPreferenceProfile;
 
 
         // constructor (SPAWNER)
@@ -29,13 +30,17 @@ namespace LemonadeStand_3DayStarter
             int indexValue = rng.Next(0, names.Count);
             name = names[indexValue];
         }
-        public void GenerateCustomerPreferences()
+        public void GenerateWeatherPreferences()
         {
             preferences = new List<string> { "PrefSunny", "PrefMostlySunny", "PrefPartlyCloudy/Sunny", "PrefMostlyCloudy", "PrefOvercast" };
             Random rng = new Random();
             int indexValue = rng.Next(0, preferences.Count);
             preference = preferences[indexValue];
         }
-
+        public void AssignWeatherPreference()
+        {
+            Random rng = new Random();
+            weatherPreferenceProfile =  + rng.Next();
+        }
     }
 }

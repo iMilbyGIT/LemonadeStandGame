@@ -40,10 +40,10 @@ namespace LemonadeStand_3DayStarter
             int indexValue = rng.Next(0, preferences.Count);
             preference = preferences[indexValue];
         }
-        //void AssignWeatherPreference()
-        //{
+        void AssignWeatherPreference()
+        {
          //   Random rng = new Random();
          //   weatherPreferenceProfile =  + rng.Next();
-        //}
+        }
     }
 }

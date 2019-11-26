@@ -12,7 +12,7 @@ namespace LemonadeStand_3DayStarter
         public Customer customer;
         List<Customer> customers;
 
-        // constructor (SPAWNER)
+        // constructor (SPAWNER) 
         public Day()
         {
             weather = new Weather();

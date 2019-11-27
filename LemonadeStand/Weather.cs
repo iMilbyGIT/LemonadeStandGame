@@ -22,9 +22,7 @@ namespace LemonadeStand_3DayStarter
             GenerateCondition();
             GenerateTemp();
             ActualTempurature();
-
         }
-
         // member methods (CAN DO)
         void GenerateTemp()
         {

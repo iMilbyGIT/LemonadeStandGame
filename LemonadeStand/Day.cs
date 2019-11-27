@@ -19,10 +19,10 @@ namespace LemonadeStand_3DayStarter
             customers = new List<Customer>();
             BuildCustomersPerDay();
         }
-
+        // SOLID PRINCIPLE 2 - OPEN/CLOSED EXAMPLE
         void BuildCustomersPerDay()
         {
-            for (int i = 0; i < 15; i++)
+            for (int i = 0; i < 30; i++)
             {
                 Customer customer = new Customer();
                 customers.Add(customer);
@@ -34,7 +34,8 @@ namespace LemonadeStand_3DayStarter
         //member methods (CAN DO)
         public void RunDay()
         {
-         //all the logic needed for one day to happen
+            //all the logic needed for one day to happen
+        //    UserInterface.GetNumberOfItems(Item.cups);
         }
     }
 }

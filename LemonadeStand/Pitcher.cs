@@ -9,14 +9,26 @@ namespace LemonadeStand_3DayStarter
     class Pitcher
     {
         // member variables (HAS A)
-        int cupsLeftInPitcher;
+        public int cupsLeftInPitcher;
+        public int lemonsInAPitcher;
+        public int sugarCubesInAPitcher;
+        public int iceCubesInAPitcher;
+        
 
         //constructor (Spawner)
         public Pitcher()
         {
-
+            cupsLeftInPitcher = 0;
+        }
+        // member methods (CAN DO)
+        public void CreatePitcher()
+        {
+        //    Inventory.lemons
+        //    Inventory.sugarCubes
+        //    Inventory.iceCubes
+        //    Inventory.cups
         }
 
-        // member methods (CAN DO)
+
     }
 }

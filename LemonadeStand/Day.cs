@@ -16,6 +16,7 @@ namespace LemonadeStand_3DayStarter
         public Day()
         {
             weather = new Weather();
+            customers = new List<Customer>();
             BuildCustomersPerDay();
         }
 

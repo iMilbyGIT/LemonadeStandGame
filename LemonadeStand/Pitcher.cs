@@ -12,7 +12,6 @@ namespace LemonadeStand_3DayStarter
         public int cupsLeftInPitcher;
         public int cupsInAPitcher;
         
-
         //constructor (Spawner)
         public Pitcher()
         {

@@ -53,7 +53,7 @@ namespace LemonadeStand_3DayStarter
                     
                     break;
                     case "make":
-                    player.Recipe(player);
+                    recipe.CreateRecipe();
                     break;
                     case "money":
                 //    Wallet.Money.get();

@@ -38,18 +38,22 @@ namespace LemonadeStand_3DayStarter
             string whatToBuyInput = Console.ReadLine();
                 switch(whatToBuyInput)
                 {
-                case "lemons":
-
-                case "sugar cubes":
-
-                case "ice cubes":
-
-                case "cups":
-
-                default:
-                Console.WriteLine("That's not one of ades of lemond! Please enter an ingredient to make your delicious lemonade!");
-                return;
-            }
+                    case "lemons":
+                    UserInterface.GetNumberOfItems(whatToBuyInput);
+                    break;
+                    case "sugar cubes":
+                    UserInterface.GetNumberOfItems(whatToBuyInput);
+                    break;
+                    case "ice cubes":
+                    UserInterface.GetNumberOfItems(whatToBuyInput);
+                    break;
+                    case "cups":
+                    UserInterface.GetNumberOfItems(whatToBuyInput);
+                    break;
+                    default:
+                    Console.WriteLine("That's not one of ades of lemond! Please enter an ingredient to make your delicious lemonade!");
+                    return;
+                }
         }
     }
 }

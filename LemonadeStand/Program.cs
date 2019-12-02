@@ -12,7 +12,7 @@ namespace LemonadeStand_3DayStarter
         {
             Game game = new Game();
             Pitcher pitcher = new Pitcher();
-            Recipe recipe = new Recipe();
+         //   Recipe recipe = new Recipe();
         }
     }
 }

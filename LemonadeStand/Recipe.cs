@@ -9,6 +9,7 @@ namespace LemonadeStand_3DayStarter
     class Recipe
     {
         // member variables (HAS A)
+        public string itemsInRecipe;
         public int amountOfLemons;
         public int amountOfSugarCubes;
         public int amountOfIceCubes;
@@ -18,7 +19,7 @@ namespace LemonadeStand_3DayStarter
         // constructor (SPAWNER)
         public Recipe()
         {
-        
+            itemsInRecipe = 
         }
 
         //member methods (CAN DO)

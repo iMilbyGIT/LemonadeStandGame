@@ -11,6 +11,8 @@ namespace LemonadeStand_3DayStarter
         public Weather weather;
         public Customer customer;
         List<Customer> customers;
+        public Pitcher pitcher;
+        public Recipe recipe;
 
         // constructor (SPAWNER) 
         public Day()
@@ -31,7 +33,7 @@ namespace LemonadeStand_3DayStarter
         //member methods (CAN DO)
         public void RunDay(Player player, Store store)
         {
-            Console.WriteLine("Would you like to buy lemons, sugar cubes, ice cubes, or cups? If you don't need to buy more items please type: Inventory to check inventory stock levels or Make to make recipe for the day.");
+            Console.WriteLine("Would you like to buy lemons, sugar cubes, ice cubes, or cups? If you don't need to buy more items please type: -money- to check how much cash you have, -inventory- to check stock levels, or -make- to make recipe for the day.");
             string whatToBuyInput = Console.ReadLine();
                 switch(whatToBuyInput)
                 {
@@ -51,10 +53,13 @@ namespace LemonadeStand_3DayStarter
                     
                     break;
                     case "make":
-
+                    player.Recipe(player);
+                    break;
+                    case "money":
+                //    Wallet.Money.get();
                     break;
                     default:
-                    Console.WriteLine("That's not one of ades of lemond! Please enter an ingredient or next step to make your delicious lemonade!");
+                    Console.WriteLine("That's not one of ades of lemon! Please enter an ingredient or next step to make your delicious lemonade!");
                     return;
                 }
         }

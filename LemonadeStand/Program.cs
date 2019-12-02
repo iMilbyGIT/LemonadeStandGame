@@ -11,8 +11,6 @@ namespace LemonadeStand_3DayStarter
         static void Main(string[] args)
         {
             Game game = new Game();
-        //    Pitcher pitcher = new Pitcher();
-        //   Recipe recipe = new Recipe();
         }
     }
 }

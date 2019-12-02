@@ -15,12 +15,18 @@ namespace LemonadeStand_3DayStarter
         public double costToMakePerCup;
 
         // constructor (SPAWNER)
-        public Recipe(int amountOfLemons, int amountOfSugarCubes, int amountOfIceCubes)
+        public Recipe()
         {
-            this.amountOfLemons = amountOfLemons;
-            this.amountOfSugarCubes = amountOfSugarCubes;
-            this.amountOfIceCubes = amountOfIceCubes;
+            Console.WriteLine("How many lemons would you like to add for this recipe?");
+            amountOfLemons = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("How many sugar cubes would you like to add for this recipe?");
+            amountOfSugarCubes = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("How many ice cubes would you like to add for this recipe?");
+            amountOfIceCubes = Int32.Parse(Console.ReadLine());
         }
+//        public Recipe(int amountOfLemons, int amountOfSugarCubes, int amountOfIceCubes)
+//        { }
+
         //member methods (CAN DO)
         public void CalcCostPerCup()
         {

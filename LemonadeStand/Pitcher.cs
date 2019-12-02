@@ -13,12 +13,14 @@ namespace LemonadeStand_3DayStarter
         public int lemonsInAPitcher;
         public int sugarCubesInAPitcher;
         public int iceCubesInAPitcher;
+        bool isFull;
         
 
         //constructor (Spawner)
         public Pitcher()
         {
             cupsLeftInPitcher = 0;
+            isFull = false;
         }
         // member methods (CAN DO)
         public void CreatePitcher()
@@ -28,7 +30,19 @@ namespace LemonadeStand_3DayStarter
         //    Inventory.iceCubes
         //    Inventory.cups
         }
-
+        public void IngredientCountDown()
+        {
+//            while (cookTime >= 0)
+//            {
+//                Console.WriteLine(cookTime);
+//                if (cookTime == 0)
+//                {
+//                    PowerOff();
+//                    Console.WriteLine("microwave turned off!");
+//                }
+//                cookTime--;
+//            }
+        }
 
     }
 }

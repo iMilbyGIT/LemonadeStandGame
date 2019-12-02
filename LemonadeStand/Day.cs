@@ -34,8 +34,22 @@ namespace LemonadeStand_3DayStarter
         //member methods (CAN DO)
         public void RunDay()
         {
-            //all the logic needed for one day to happen
-        //    UserInterface.GetNumberOfItems(Item.cups);
+            Console.WriteLine("Welcome to the C# Lemonade Stand! Would you like to buy lemons, sugar cubes, ice cubes, or cups?");
+            string whatToBuyInput = Console.ReadLine();
+                switch(whatToBuyInput)
+                {
+                case "lemons":
+
+                case "sugar cubes":
+
+                case "ice cubes":
+
+                case "cups":
+
+                default:
+                Console.WriteLine("That's not one of ades of lemond! Please enter an ingredient to make your delicious lemonade!");
+                return;
+            }
         }
     }
 }

@@ -20,12 +20,11 @@ namespace LemonadeStand_3DayStarter
             this.amountOfLemons = amountOfLemons;
             this.amountOfSugarCubes = amountOfSugarCubes;
             this.amountOfIceCubes = amountOfIceCubes;
-
         }
         //member methods (CAN DO)
         public void CalcCostPerCup()
         {
-            costToMakePerCup = 
+        //    costToMakePerCup = Store.pricePerLemon;
         }
 
 

@@ -31,7 +31,7 @@ namespace LemonadeStand_3DayStarter
         //member methods (CAN DO)
         public void RunDay(Player player, Store store)
         {
-            Console.WriteLine("Would you like to buy lemons, sugar cubes, ice cubes, or cups?");
+            Console.WriteLine("Would you like to buy lemons, sugar cubes, ice cubes, or cups? If you don't need to buy more items please type: Inventory to check inventory stock levels or Make to make recipe for the day.");
             string whatToBuyInput = Console.ReadLine();
                 switch(whatToBuyInput)
                 {
@@ -47,8 +47,14 @@ namespace LemonadeStand_3DayStarter
                     case "cups":
                     store.SellCups(player);
                     break;
+                    case "inventory":
+                    
+                    break;
+                    case "make":
+
+                    break;
                     default:
-                    Console.WriteLine("That's not one of ades of lemond! Please enter an ingredient to make your delicious lemonade!");
+                    Console.WriteLine("That's not one of ades of lemond! Please enter an ingredient or next step to make your delicious lemonade!");
                     return;
                 }
         }

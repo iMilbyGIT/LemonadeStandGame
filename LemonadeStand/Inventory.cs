@@ -13,10 +13,12 @@ namespace LemonadeStand_3DayStarter
         public List<SugarCube> sugarCubes;
         public List<IceCube> iceCubes;
         public List<Cup> cups;
+    //    public List<FullInventory> fullIventory;
 
         // constructor (SPAWNER)
         public Inventory()
         {
+        //    fullInventory = new List<FullInventory>();
             lemons = new List<Lemon>();
             sugarCubes = new List<SugarCube>();
             iceCubes = new List<IceCube>();

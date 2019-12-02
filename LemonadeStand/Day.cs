@@ -28,27 +28,24 @@ namespace LemonadeStand_3DayStarter
                 customers.Add(customer);
             }
         }
-
-
-
         //member methods (CAN DO)
-        public void RunDay()
+        public void RunDay(Player player, Store store)
         {
-            Console.WriteLine("Welcome to the C# Lemonade Stand! Would you like to buy lemons, sugar cubes, ice cubes, or cups?");
+            Console.WriteLine("Would you like to buy lemons, sugar cubes, ice cubes, or cups?");
             string whatToBuyInput = Console.ReadLine();
                 switch(whatToBuyInput)
                 {
                     case "lemons":
-                    UserInterface.GetNumberOfItems(whatToBuyInput);
+                    store.SellLemons(player);
                     break;
                     case "sugar cubes":
-                    UserInterface.GetNumberOfItems(whatToBuyInput);
+                    store.SellSugarCubes(player);
                     break;
                     case "ice cubes":
-                    UserInterface.GetNumberOfItems(whatToBuyInput);
+                    store.SellIceCubes(player);
                     break;
                     case "cups":
-                    UserInterface.GetNumberOfItems(whatToBuyInput);
+                    store.SellCups(player);
                     break;
                     default:
                     Console.WriteLine("That's not one of ades of lemond! Please enter an ingredient to make your delicious lemonade!");

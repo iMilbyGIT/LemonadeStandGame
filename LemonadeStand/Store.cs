@@ -30,7 +30,7 @@ namespace LemonadeStand_3DayStarter
             double transactionAmount = CalculateTransactionAmount(lemonsToPurchase, pricePerLemon);
             if(player.wallet.Money >= transactionAmount)
             {
-                player.wallet.PayMoneyForItems(transactionAmount);
+                PerformTransaction(player.wallet, transactionAmount);
                 player.inventory.AddLemonsToInventory(lemonsToPurchase);
             }
         }

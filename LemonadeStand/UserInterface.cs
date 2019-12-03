@@ -8,15 +8,16 @@ namespace LemonadeStand_3DayStarter
 {
     static class UserInterface
     {
-        public static void DisplayForecast(Day day)
+        public static void DisplayForecast(Day days, Weather weather)
         {
-            Console.WriteLine($"{day.weather} Day Forecast");
+            Console.WriteLine($"{days.weather} Day Forecast");
             Console.WriteLine("- - - - - - - - - - - - -\n");
             for (int i = 0; i < 7 ; i++)
             {
-                string dayName = i == 0 ? "TODAY: " : $"{i} DAYS OUT: ";
-                Console.WriteLine($"{dayName} A high of {day.weather.ActualTemp}°F and will be {day.weather.Condition}.");
+                string dayLabel = i == 0 ? "TODAY: " : $"{i} DAYS OUT: ";
+                Console.WriteLine($"{dayLabel} A high of {days.weather.ActualTemp}°F and will be {days.weather.Condition}.");
             }
+            return;
         }
 
         public static int GetNumberOfItems(string itemsToGet)
@@ -30,7 +31,6 @@ namespace LemonadeStand_3DayStarter
                 Console.WriteLine("Please enter a positive integer (or 0 to cancel):");
                 userInputIsAnInteger = Int32.TryParse(Console.ReadLine(), out quantityOfItem);
             }
-
             return quantityOfItem;
         }
         public static void DisplayWalletBalance(Player player)

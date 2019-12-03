@@ -53,10 +53,10 @@ namespace LemonadeStand_3DayStarter
                     
                     break;
                     case "make":
-                    recipe.CreateRecipe();
+                    recipe.CreateRecipe(store);
                     break;
                     case "money":
-                //    Wallet.Money.get();
+
                     break;
                     default:
                     Console.WriteLine("That's not one of ades of lemon! Please enter an ingredient or next step to make your delicious lemonade!");

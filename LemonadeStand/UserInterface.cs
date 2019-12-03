@@ -8,6 +8,17 @@ namespace LemonadeStand_3DayStarter
 {
     static class UserInterface
     {
+        public static void DisplayForecast(Day day)
+        {
+            Console.WriteLine($"{day.weather} Day Forecast");
+            Console.WriteLine("- - - - - - - - - - - - -\n");
+            for (int i = 0; i < 7 ; i++)
+            {
+                string dayName = i == 0 ? "TODAY: " : $"{i} DAYS OUT: ";
+                Console.WriteLine($"{dayName} A high of {day.weather.ActualTemp}°F and will be {day.weather.Condition}.");
+            }
+        }
+
         public static int GetNumberOfItems(string itemsToGet)
         {
             bool userInputIsAnInteger = false;
@@ -21,6 +32,10 @@ namespace LemonadeStand_3DayStarter
             }
 
             return quantityOfItem;
+        }
+        public static void DisplayWalletBalance(Player player)
+        {
+            Console.WriteLine($"{player} your current bank account balance is ${player.wallet}\n");
         }
     }
 }
